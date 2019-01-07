@@ -4,67 +4,88 @@ body {
 }
 
 .navbar {
-  border-top: 3px solid white;
+  border-top: 1px solid white;
+}
+
+.menu-btn:hover {
+  background-color: white;
+}
+
+.bubble {
+  position: fixed;
+  background: #ffffff;
+  border-radius: .5em;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #ffffff;
+  border-top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .card {
-    border-radius: 0;
-    border: none;
+  border-radius: 0;
+  border: none;
 }
 
-.btn {
-font-weight: 400;
+.nav-links {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  color: #4c4c4c;
 }
 
-.btn:hover {
+.nav-links:hover, .nav-links:focus {
   background-color: white;
-  /*border-radius: 0.3rem;*/
+  color: #4c4c4c;
+  box-shadow: none;
 }
+
 .dark-bg {
   background-color: #4c4c4c;
 }
 
-.space-left {
-  margin-left: 10%;
-}
-.space-left-double {
-  margin-left: 20%;
-}
-
-.space-right {
-  margin-right: 10%;
+@media (min-width: 578px) {
+  .space-left {
+    margin-left: 10%;
+  }
+  .space-left-double {
+    margin-left: 20%;
+  }
+  .space-right {
+    margin-right: 10%;
+  }
 }
 
 .jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-bottom: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
-  @media (min-width: 768px) {
-    .jumbotron {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-  
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .jumbotron-heading {
-    font-weight: 300;
-  }
-  
-  .jumbotron .container {
-    max-width: 40rem;
-  }
-  
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
-  }
-  
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
