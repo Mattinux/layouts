@@ -46,7 +46,7 @@
     <div class="container p-0 m-0">
       <div class="row">
       <!--nav bar-->
-      <div class="col-md-7 order-md-4 p-0">
+      <div class="col-md-7 order-md-4 p-0 line">
           <nav class="navbar navbar-expand-sm navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,9 +73,9 @@
                           
         <div class="col-md-7 order-md-2 p-0">
           <div>
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline mt-md-5 ml-md-5" action="#" method="GET">
+              <input class="form-control mr-sm-2 searchbox nav-links" type="text" name="search" placeholder="Rechercher">
+              <button class="btn my-2 my-sm-0" type="submit" style="display:none">Search</button>
             </form>
           </div>
         </div>
@@ -264,11 +264,12 @@
 
   </main>
 
-  <footer class="text-muted">
+  <footer class="footer dark-bg">
     <div class="container">
       <p class="float-right">
-        <a href="#">Back to top</a>
+        <img src="img/logo.jpg" alt="Logo Sympelix" class="img-fluid">
       </p>
+      <span class="text-muted">Place sticky footer content here.</span>
       <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
       <p>New to Bootstrap? <a href="https://getbootstrap.com">Visit the homepage</a> or read our <a href="/docs/4.2/getting-started/introduction/">getting
           started guide</a>.</p>
