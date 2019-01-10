@@ -48,7 +48,7 @@ a:hover {
 	height: 3px;
 	width:100%;
 	background:black;
-	border-radius:10px;
+	border-radius:1px;
 	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
 }
 
@@ -58,6 +58,7 @@ a:hover {
 
 .line02 {
   top:49%;
+  width: 60%;
 }
 
 .line03 {
@@ -126,18 +127,6 @@ a:hover {
 
 .dark-bg {
   background-color: #4c4c4c;
-}
-
-@media (min-width: 578px) {
-  .space-left {
-    margin-left: 10%;
-  }
-  .space-left-double {
-    margin-left: 20%;
-  }
-  .space-right {
-    margin-right: 10%;
-  }
 }
 
 .footer {
