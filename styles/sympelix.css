@@ -3,6 +3,22 @@ body {
   color: #f3a692;
 }
 
+a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 95%;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.leather {
+  background-color: #000000;
+  background-image: url("../img/leather.png")
+}
+
 .searchbox {
   text-align: end;
   border-radius: 0.5rem;
@@ -50,7 +66,7 @@ body {
   border: none;
 }
 
-.nav-links {
+.nav-links, .dropdown-item {
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
@@ -95,12 +111,8 @@ body {
   }
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
+.footer {
   color: white;
-  margin-bottom: .25rem;
+  font-size: 90%;
+  font-weight: 700;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
   <link href="styles/sympelix.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 
   <header>
     <!-- fixed top menu button-->
@@ -38,9 +38,9 @@
             <img class="p-3" src="img/menu-btn.png" alt="menu button">
           </a>
             <div class="dropdown-menu mt-3 mr-3 mr-sm-0 bubble" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item nav-links" href="#">Action</a>
-              <a class="dropdown-item nav-links" href="#">Another action</a>
-              <a class="dropdown-item nav-links" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
         </div>
     <div class="container p-0 m-0">
@@ -67,8 +67,8 @@
             </div>
           </nav>
         </div>
-        <div class="col-md-5 order-md-1 p-0">
-          <img src="img/logo.jpg" alt="Logo Sympelix" class="img-fluid">
+        <div class="leather col-md-5 order-md-1 p-0">
+          <img src="img/logo.png" alt="Logo Sympelix" class="img-fluid">
         </div>
                           
         <div class="col-md-7 order-md-2 p-0">
@@ -264,22 +264,77 @@
 
   </main>
 
-  <footer class="footer dark-bg">
-    <div class="container">
-      <p class="float-right">
-        <img src="img/logo.jpg" alt="Logo Sympelix" class="img-fluid">
-      </p>
-      <span class="text-muted">Place sticky footer content here.</span>
-      <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p>New to Bootstrap? <a href="https://getbootstrap.com">Visit the homepage</a> or read our <a href="/docs/4.2/getting-started/introduction/">getting
-          started guide</a>.</p>
+  <footer class="leather footer mt-auto">
+    <div class="row">
+      <div class="col-6 ml-md-5 row">
+          <div class="nav flex-column m-3">
+            <div class="container nav-link">
+              <p><strong>SYMPELIX</strong></p>
+            </div>
+
+              <div class="container">
+                <a href="#">Concept</a>
+              </div>
+              <div class="container">
+                <a href="#">Objectif</a>
+              </div>
+              <div class="container">
+                <a href="#">Conditions</a>
+              </div>
+          </div>
+          <div class="nav flex-column m-3">
+              <div class="container nav-link">
+                <p><strong>CONTACT</strong></p>
+              </div>
+  
+                <div class="container">
+                  <a href="#">Contactez-nous</a>
+                </div>
+                <div class="container">
+                  <a href="#">Contactez un Magasin</a>
+                </div>  
+                <div class="container">
+                    <a href="#">Suggérer un Magasin</a>
+                </div>  
+          </div>
+          <div class="nav flex-column m-3">
+              <div class="container nav-link">
+                  <p><strong>PROFESSIONNEL</strong></p>
+              </div>
+  
+              <div class="container">
+                  <a href="#">Connexion PRO</a>
+              </div>
+              <div class="container">
+                  <a href="#">Demande d'inscription</a>
+              </div>
+              <div class="container">
+                  <a href="#">Devenir partenaire PRO</a>
+              </div>
+            </div>
+        </div>
+      <div class="col-6 col-md-4 ml-auto">
+          <img src="img/logo.png" alt="Logo Sympelix" class="img-fluid">
+      </div>
     </div>
-  </footer>
+    <div class="row">
+      <div class="col-6 ml-md-5 row small">
+          <p class="ml-3 nav-link">&copy; 2019 Sympelix</p>
+      </div>
+      <div class="col-6 col-md-4 ml-auto">
+          <p class="text-center">
+            <a href="#">Some Links</a> | <a href="#">Here and Here</a>
+          </p>
+      </div>
+    </div>
+</footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-
+ 
+</body>
 </html>
