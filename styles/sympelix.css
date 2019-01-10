@@ -14,6 +14,10 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-toggler {
+  z-index: 1200;
+}
+
 .leather {
   background-color: #000000;
   background-image: url("../img/leather.png")
@@ -40,6 +44,7 @@ a:hover {
 
 #dropdownMenuLink {
   background: white;
+  cursor: pointer;
 }
 
 .main-item {
