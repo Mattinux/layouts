@@ -33,12 +33,50 @@ a:hover {
   border: none;
 }
 
-.line {
-  border-top: 1px solid white;
+#dropdownMenuLink {
+  background: white;
 }
 
-.menu-btn:hover, .menu-btn:focus {
-  background-color: white;
+.main-item {
+	width:30px;
+	height:30px;
+	position:relative;
+}
+
+.line {
+	position: absolute;
+	height: 3px;
+	width:100%;
+	background:black;
+	border-radius:10px;
+	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.line01 {
+	top:19%;
+}
+
+.line02 {
+  top:49%;
+}
+
+.line03 {
+	top:79%;
+}
+
+.menu.cross .line01 {
+	transform:rotate(45deg);
+	top:49%;
+}
+
+.menu.cross .line02 {
+	width: 0;
+	top:49%;
+}
+
+.menu.cross .line03 {
+	transform:rotate(-45deg);
+	top:49%;
 }
 
 .bubble {
@@ -51,7 +89,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  right: 16px;
+  right: 28px;
   width: 0;
   height: 0;
   border: 20px solid transparent;
@@ -64,6 +102,10 @@ a:hover {
 .card {
   border-radius: 0;
   border: none;
+}
+
+#navbarCollapse {
+  border-top: 1px solid white;
 }
 
 .nav-links, .dropdown-item {
@@ -95,19 +137,6 @@ a:hover {
   }
   .space-right {
     margin-right: 10%;
-  }
-}
-
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 }
 
