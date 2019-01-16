@@ -14,10 +14,6 @@ a:hover {
   text-decoration: none;
 }
 
-.logo {
-  max-height: 3rem;
-}
-
 .navbar-toggler {
   z-index: 1200;
 }
