@@ -50,7 +50,7 @@ main {
 }
 
 
-.leather {
+.leather, .dark-bg:hover {
   background-color: #000000;
   background-image: url("../img/leather.png");
 }
@@ -91,7 +91,7 @@ main {
 }
 
 .dark-bg {
-  background-color: #4c4c4c;
+  background-color: rgb(76, 76, 76);
 }
 
 .cards-group > .row {
@@ -179,6 +179,10 @@ p.card-text {
 
 footer img {
   max-height: 8rem;
+}
+
+footer p {
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
