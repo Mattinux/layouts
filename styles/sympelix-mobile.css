@@ -50,76 +50,6 @@ main {
 }
 
 
-@media (min-width: 768px) {
-  nav.leather {
-    background-color: transparent;
-    background-image: none;
-    }
-  
-  .logo {
-    background-color: #000000;
-    background-image: url("../img/leather.png")  
-  }
-
-  .dropdown {
-    position: fixed;
-    right: 0;
-    z-index: 1200;
-  }
-  
-  .user {
-    padding: 1.1rem 0.75rem;
-    background-color: rgba(227, 216, 214, 0.66);
-    color: #4c4c4c !important;  
-  }
-
-  .user:hover, .user:focus {
-    background-color: white;
-  }
-
-  .menu-title, .btn-close, .nav-item i {
-    display: none;
-  }
-
-  .navbar-collapse {
-    position: relative;
-    width:inherit;
-    background-color: inherit;
-    color: inherit;
-  }  
-
-  .navbar-nav{
-    background-color: transparent;
-    justify-content: center;
-  }
-
-  .nav-link {
-    font-weight: 700;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-    color: #4c4c4c !important;
-  }
-
-  .white-line {
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
-    height: 1px;
-    background-color: #ffffff;
-  }
-
-  .fixed-top {
-    position: relative;
-  }
-
-  main {
-    margin-top: 1rem;
-  }
-  
-}
-
 .leather {
   background-color: #000000;
   background-image: url("../img/leather.png");
@@ -162,6 +92,20 @@ main {
 
 .dark-bg {
   background-color: #4c4c4c;
+}
+
+.cards-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+}
+.cards-group > .row > .col-md-4 {
+  display: inline-block;
+  float: none;
+}
+
+p.card-text {
+  white-space: normal;
 }
 
 .btn-orange {
@@ -235,4 +179,78 @@ main {
 
 footer img {
   max-height: 8rem;
+}
+
+@media (min-width: 768px) {
+  nav.leather {
+    background-color: transparent;
+    background-image: none;
+    }
+  
+  .logo {
+    background-color: #000000;
+    background-image: url("../img/leather.png")  
+  }
+
+  .dropdown {
+    position: fixed;
+    right: 0;
+    z-index: 1200;
+  }
+  
+  .user {
+    padding: 1.1rem 0.75rem;
+    background-color: rgba(227, 216, 214, 0.66);
+    color: #4c4c4c !important;  
+  }
+
+  .user:hover, .user:focus {
+    background-color: white;
+  }
+
+  .menu-title, .btn-close, .nav-item i {
+    display: none;
+  }
+
+  .navbar-collapse {
+    position: relative;
+    width:inherit;
+    background-color: inherit;
+    color: inherit;
+  }  
+
+  .navbar-nav {
+    background-color: transparent;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    color: #4c4c4c !important;
+  }
+
+  .white-line {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
+  .fixed-top {
+    position: relative;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+  
+  .cards-group > .row {
+    overflow-x: inherit;
+  }
+  
 }
